@@ -1,0 +1,23 @@
+var rs = require('readline-sync');
+
+var opType = ['+', '-', '*', '/']; 
+var oper = rs.question('What operation would you like to perform? ');
+for (let i = 0; i < 4; i++) {
+    if (oper === opType[i]) {
+        flag = 1;
+    }
+} 
+if (flag = 1) {
+        console.log('You chose ' + oper);
+    } else {
+        console.log('That is not a valid operator');
+    }
+var fstNumber = rs.questionInt('Please enter the first number: '); {
+    console.log('Your first number is: ' + fstNumber);
+}
+var scdNumber = rs.questionInt('Please enter the second number: ');
+if (isNaN(scdNumber)) {
+    console.log('Not a number');
+} else {
+console.log('Your second number is: ' + scdNumber);
+}
